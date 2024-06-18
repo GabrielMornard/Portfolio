@@ -12,9 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
             bubble.style.left = `${Math.random() * 100}%`;  // Random horizontal position
             bubble.style.top = `${Math.random() * 100}%`;   // Random vertical position
             bubblesContainer.appendChild(bubble);
-            console.log('Bubble added');
         }
     } else {
-        console.error('Bubbles container not found');
     }
 });
