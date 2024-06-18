@@ -44,8 +44,9 @@ body {
     color: white;
     margin-left: 10%;
     margin-right: 10%;
-    border-width: 2px;
-    border-color: #4fc3dc44;
+    border-left: 2px solid #941c46;
+    border-right: 2px solid #941c46;
+    padding: 20px; /
 }
 
 @keyframes animate {
