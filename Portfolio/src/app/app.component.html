@@ -3,18 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="app.component.css">
     <title>Portfolio | Gabriel Mornard</title>
 </head>
 <body>
     <div class="container">
         <div class="bubbles" id="bubbles"></div>
         <div class="navigation">
-            <a href="#moi">MOI</a>
-            <a href="#projets">PROJETS </a>
-            <a href="#contact">CONTACT </a>
+            <a href="#moi" translate>main.Moi</a>
+            <a href="#projets" translate>main.Projet </a>
+            <a href="#contact" translate>main.Contact </a>
         </div>
-        
+        <div>
+          <select name="language" class="translatorBox" [(ngModel)]="language" id="language" (change)="changeLangue()">
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+          </select>
+      </div>
         <div class="content" id="moi">
             
             <div class="section" >
@@ -26,6 +31,7 @@
                 <div class="component">
                     <div class="projetsWeb">Web</div>
                     <div class="android">Android</div>
+                    <router-outlet></router-outlet>
                 </div>
             </div>
             <div class="section" id="contact">
