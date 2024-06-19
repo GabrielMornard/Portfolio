@@ -4,16 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.component.css">
-    <title>Portfolio | Gabriel Mornard</title>
 </head>
 <body>
     <div class="container">
         <div class="bubbles" id="bubbles"></div>
         <div class="navigation">
-            <a href="#moi" translate>main.Moi</a>
-            <a href="#projets" translate>main.Projet </a>
-            <a href="#contact" translate>main.Contact </a>
-        </div>
+          <a href="#moi" (click)="scrollTo('#moi', $event)" translate>main.Moi</a>
+          <a href="#projets" (click)="scrollTo('#projets', $event)" translate>main.Projet</a>
+          <a href="#contact" (click)="scrollTo('#contact', $event)" translate>main.Contact</a>
+        </div>                      
         <div>
           <select name="language" class="translatorBox" [(ngModel)]="language" id="language" (change)="changeLangue()">
               <option value="fr">Français</option>
@@ -38,9 +37,8 @@
             <div class="section" id="contact">
                 <h1 translate>contact.contact</h1>
             </div>
-
         </div>
-        <script src="/JavaScript/script.js"></script>
+        <div class="bubbles" id="bubbles"></div>
 
 
     </div>

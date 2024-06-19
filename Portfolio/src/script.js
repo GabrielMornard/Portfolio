@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
     if (bubblesContainer) {
         console.log('Bubbles container found');
-        const maxBubbles = 50;  // Set a maximum number of bubbles
+        const maxBubbles = 100;  // Set a maximum number of bubbles
         
         for (let i = 0; i < maxBubbles; i++) {
             const bubble = document.createElement('span');
