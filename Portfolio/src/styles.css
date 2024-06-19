@@ -71,9 +71,8 @@ html, body {
 }
 
 #projets{
-    background: white;
-    color: black;
-    
+    background: #941c46;
+    color: white;
 }
 
 .navigation {
@@ -101,6 +100,7 @@ html, body {
     border-top: 1px solid black;
     text-align: center;
     border-bottom: 1px solid black;
+    padding: 5px;
 }
 .android{
     width: 50%;
@@ -109,6 +109,7 @@ html, body {
     border-top: 1px solid black;
     text-align: center;
     border-bottom: 1px solid black;
+    padding: 5px;
 }
 .component{
     display: flex;
