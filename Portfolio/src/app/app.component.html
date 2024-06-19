@@ -28,18 +28,19 @@
             <div class="section" id="projets">
                 <h1 class="projetTitle" translate>projet.myProject</h1>
                 <div class="component">
-                    <div class="projetsWeb" routerLink="/web" translate>projet.web</div>
-                    <div class="android" routerLink="/android" translate>projet.android</div>
+
+                    <div class="projetsWeb" [routerLink]="['/web']" translate>projet.web</div>
+                    <div class="android" [routerLink]="['/android']" translate>projet.android</div>
                     
                 </div>
-                <router-outlet></router-outlet>
+                <div class="theProject">
+                    <router-outlet></router-outlet>
+                </div>
             </div>
             <div class="section" id="contact">
                 <h1 translate>contact.contact</h1>
             </div>
         </div>
-        <div class="bubbles" id="bubbles"></div>
-
 
     </div>
 </body>

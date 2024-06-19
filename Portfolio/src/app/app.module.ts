@@ -10,6 +10,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WebComponent } from './web/web.component';
+import { AndroidComponent } from './android/android.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -18,7 +19,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 @NgModule({
   declarations: [
     AppComponent,
-    WebComponent
+    WebComponent,
+    AndroidComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     }),
     RouterModule.forRoot([
       { path: "", redirectTo: "/web", pathMatch: "full" },
-      { path: "web", component: WebComponent }
+      { path: "web", component: WebComponent },
+      { path: "android", component: AndroidComponent }
     ])
   ],
   providers: [],

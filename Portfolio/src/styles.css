@@ -93,6 +93,23 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+
+.navigation a {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.theProject{
+    border: 1px solid black;
+    height: 85%;
+    padding: 5px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .projetsWeb{
     width: 50%;
     border-radius: 5px;
@@ -101,6 +118,12 @@ html, body {
     text-align: center;
     border-bottom: 1px solid black;
     padding: 5px;
+}
+.android:hover{
+    cursor: pointer;
+}
+.projetsWeb:hover{
+    cursor: pointer;
 }
 .android{
     width: 50%;
