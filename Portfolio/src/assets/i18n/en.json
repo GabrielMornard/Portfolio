@@ -3,5 +3,13 @@
         "Moi":"About me",
         "Projet":"Projects",
         "Contact":"Contacts"
+    },
+    "projet":{
+        "myProject":"My Projects",
+        "web":"Web",
+        "android":"Android"
+    },
+    "contact":{
+        "contact":"My Contacts"
     }
 }
