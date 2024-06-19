@@ -55,15 +55,24 @@ html, body {
     margin-right: 10%;
     border-left: 2px solid #941c46;
     border-right: 2px solid #941c46;
-    padding: 20px;
     overflow-y: auto;
     padding-top: 60px;
+}
+.projetTitle{
+    border-bottom: 2px solid black;
+    padding-left: 20px;
 }
 .nom{
     margin-bottom: 5px;
     text-decoration: underline;
     margin-left: 50px;
     margin-top: 225px;
+}
+
+#projets{
+    background: white;
+    color: black;
+    
 }
 
 .navigation {
@@ -84,7 +93,35 @@ html, body {
     align-items: center;
     justify-content: center;
 }
+.projetsWeb{
+    width: 50%;
+    border-radius: 5px;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.android{
+    width: 50%;
+    border-radius: 5px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+.component{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5px;
+    border-radius: 5px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
 
+}
 .navigation a {
     color: white;
     text-decoration: none;
