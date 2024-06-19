@@ -75,6 +75,7 @@ html, body {
     overflow-y: auto;
     padding-top: 60px;
 }
+
 .projetTitle{
     border-bottom: 2px solid black;
     padding-left: 20px;
@@ -118,7 +119,9 @@ html, body {
 }
 
 .theProject{
-    border: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
     height: 85%;
     padding: 5px;
     width: 90%;
@@ -137,9 +140,11 @@ html, body {
 }
 .android:hover{
     cursor: pointer;
+    background: #77193a;
 }
 .projetsWeb:hover{
     cursor: pointer;
+    background: #77193a;
 }
 .android{
     width: 50%;
@@ -163,6 +168,7 @@ html, body {
     border-left: 1px solid black;
 
 }
+
 .navigation a {
     color: white;
     text-decoration: none;

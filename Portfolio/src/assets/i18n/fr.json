@@ -11,5 +11,8 @@
     },
     "contact":{
         "contact":"Mes Contacts"
+    },
+    "web":{
+        "competance":"Compétances utiliser pour ces projets"
     }
 }

@@ -11,5 +11,8 @@
     },
     "contact":{
         "contact":"My Contacts"
+    },
+    "web":{
+        "competance":"Skills used for these projects"
     }
 }
