@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { WebComponent } from './web/web.component';
 import { AndroidComponent } from './android/android.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -39,7 +40,8 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
       { path: "", redirectTo: "/web", pathMatch: "full" },
       { path: "web", component: WebComponent },
       { path: "android", component: AndroidComponent }
-    ])
+    ]),
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

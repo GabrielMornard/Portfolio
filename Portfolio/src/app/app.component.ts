@@ -1,6 +1,8 @@
 import { ViewportScroller } from '@angular/common';
 import { AfterViewInit, Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +13,10 @@ export class AppComponent implements AfterViewInit {
   title = 'Portfolio';
 
   language: string = 'fr';
+
+  // Font Awesome icon
+  faLinkedin = faLinkedin;
+  faDownload = faDownload;
 
   constructor(public translator: TranslateService, private viewportScroller: ViewportScroller) {
     this.translator.defaultLang = this.language;
@@ -25,7 +31,7 @@ export class AppComponent implements AfterViewInit {
     this.initBubbles();
   }
 
-   scrollTo(anchor: string, event: Event): void {
+  scrollTo(anchor: string, event: Event): void {
     event.preventDefault(); // Prevent default anchor behavior
     const element = document.querySelector(anchor);
     if (element) {

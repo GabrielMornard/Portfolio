@@ -84,7 +84,6 @@ html, body {
     margin-bottom: 5px;
     text-decoration: underline;
     margin-left: 50px;
-    margin-top: 225px;
 }
 
 #projets{
@@ -178,7 +177,7 @@ html, body {
 
 .moi{
     height:100%;
-    overflow:hidden;
+    /* overflow:hidden; */
 }
 
 .textAcceuil{

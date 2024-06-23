@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.component.css">
+    <script src="https://kit.fontawesome.com/8cd83ee89f.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div class="container">
@@ -20,10 +21,15 @@
           </select>
         </div>
         <div class="content" id="moi">
-            
             <div class="section" >
-                <h1 class="nom">Gabriel Mornard</h1>
+                <h1 class="nom">Gabriel Mornard </h1>
                 <p class="textAcceuil">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus maiores recusandae cupiditate, consequatur quam modi at. Accusamus illum ipsam nemo, totam eum, incidunt quae odio nam et sint fugiat.</p>
+                <a href="https://1drv.ms/b/c/51f793db27f236f7/ETheJQ9E4-tHgnfim1gF38UBZQQeDFvbQlwbeQZwIO6XMw?e=lkaJvG" target="_blank" id="liens" download="CV_GabrielMornard">
+                    <fa-icon [icon]="faDownload"></fa-icon> CV
+                  </a>
+                  <a href="https://www.linkedin.com/in/gabriel-mornard-5708a4172/" id="liens" target="_blank">
+                    <fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn
+                  </a>
             </div>
             <div class="section" id="projets">
                 <h1 class="projetTitle" translate>projet.myProject</h1>
