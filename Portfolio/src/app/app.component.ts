@@ -13,7 +13,7 @@ export class AppComponent implements AfterViewInit {
   title = 'Portfolio';
 
   language: string = 'fr';
-
+  buttonSetting: boolean = false;
   // Font Awesome icon
   faLinkedin = faLinkedin;
   faDownload = faDownload;
@@ -25,6 +25,10 @@ export class AppComponent implements AfterViewInit {
 
   changeLangue(): void {
     this.translator.use(this.language);
+  }
+
+  ShowSettings(){
+    this.buttonSetting = !this.buttonSetting;
   }
 
   ngAfterViewInit() {

@@ -43,9 +43,10 @@ html, body {
 
 .section {
     height: 100vh;
+    display: block;
 }
 
-.translatorBox {
+.translatorBoxPC {
     position: fixed;
     width: auto;
     font-size: large;
@@ -60,6 +61,20 @@ html, body {
     border-radius: 25px;
 }
 
+.translatorBoxMobile{
+    position: fixed;
+    width: auto;
+    font-size: large;
+    right: 0;
+    z-index: 5;
+    top: 0; 
+    margin: 10px; 
+    background: rgb(24, 24, 24);
+    color: white;
+    margin-top: 10px;
+    border: 2px solid #941c46;
+    border-radius: 25px;
+}
 
 .content {
     background: rgb(24, 24, 24);
@@ -81,9 +96,14 @@ html, body {
     padding-left: 20px;
 }
 .nom{
+    margin-top: 30vh;
     margin-bottom: 5px;
     text-decoration: underline;
-    margin-left: 50px;
+    text-align: center;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    font-size: 400%;
 }
 
 #projets{
@@ -177,13 +197,15 @@ html, body {
 
 .moi{
     height:100%;
-    /* overflow:hidden; */
 }
 
 .textAcceuil{
-    width: 300px;
     text-align: justify;
-    margin-left: 50px;
+    margin-bottom: 2%;
+    margin-top: 1%;
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
 }
 
 @keyframes animate {
@@ -192,5 +214,11 @@ html, body {
     }
     100% {
         transform: translateY(-10vh) scale(1);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .PC{
+        display: none;
     }
 }
