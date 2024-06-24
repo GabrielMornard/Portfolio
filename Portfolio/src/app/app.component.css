@@ -1,7 +1,8 @@
 #liens{
-    width: 30%;
+    /* width: 30%;
     margin-left: 35%;
-    margin-right: 35%;
+    margin-right: 35%; */
+    display: flex;
 }
 
 .infos{
@@ -13,5 +14,17 @@
     border-radius: 25px;
     color: white;
     text-decoration: none;
-    margin-left: 15%;
+}
+
+footer{
+    background:  rgb(24, 24, 24);
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+.cv{
+    width: 10%;
+    margin-left: 45%;
+    margin-right: 45%;
 }

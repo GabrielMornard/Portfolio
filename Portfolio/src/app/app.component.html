@@ -24,14 +24,9 @@
             <div class="section">
                 <h1 class="nom">Gabriel Mornard </h1>
                 <p class="textAcceuil">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus maiores recusandae cupiditate, consequatur quam modi at. Accusamus illum ipsam nemo, totam eum, incidunt quae odio nam et sint fugiat.</p>
-                <div id="liens">
-                <a href="https://1drv.ms/b/c/51f793db27f236f7/ETheJQ9E4-tHgnfim1gF38UBZQQeDFvbQlwbeQZwIO6XMw?e=lkaJvG" target="_blank" class="infos" download="CV_GabrielMornard">
+                <a href="https://1drv.ms/b/c/51f793db27f236f7/ETheJQ9E4-tHgnfim1gF38UBZQQeDFvbQlwbeQZwIO6XMw?e=lkaJvG" target="_blank" class="infos cv" download="CV_GabrielMornard">
                     <fa-icon [icon]="faDownload"></fa-icon> CV
-                  </a>
-                  <a href="https://www.linkedin.com/in/gabriel-mornard-5708a4172/" class="infos" target="_blank">
-                    <fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn
-                  </a>
-                </div>
+                </a>
             </div>
             <div class="section" id="projets">
                 <h1 class="projetTitle" translate>projet.myProject</h1>
@@ -45,11 +40,15 @@
                     <router-outlet></router-outlet>
                 </div>
             </div>
-            <div class="section" id="contact">
-                <h1 translate>contact.contact</h1>
-            </div>
+            <footer>
+                <h5>Contact Me</h5>
+                <div id="liens">
+                      <a href="https://www.linkedin.com/in/gabriel-mornard-5708a4172/" class="infos" target="_blank">
+                        <fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn
+                      </a>
+                    </div>
+            </footer>
         </div>
-
     </div>
 </body>
 </html>
