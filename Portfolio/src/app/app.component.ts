@@ -15,7 +15,7 @@ export class AppComponent implements AfterViewInit {
   isNavbarClicked = false;
   lastScrollPosition = 0;
 
-  language: string = 'fr';
+  language: string = 'en';
   buttonSetting: boolean = false;
   faLinkedin = faLinkedin;
   faDownload = faDownload;

@@ -1,8 +1,17 @@
 {
     "main":{
         "Moi":"À Propos De Moi",
-        "Projet":"Projets",
-        "Contact":"Contacts"
+        "Skills":"Habiletés",
+        "Contact":"Contacts",
+        "Projects":"Projets",
+        "Title":"Sur le point de devenir développeur full-stack, diplômé bientôt !",
+        "Description":"Bonjour, je suis Gabriel Mornard. Je suis passionné par le développement web et le design. Bienvenue dans mon espace !"
+    },
+    "Skills":{
+        "Title":"Mes Habiletés",
+        "BD":"Base de données",
+        "Mobile":"Développement Mobile",
+        "Tools":"Outils et autre"
     },
     "projet":{
         "myProject":"Mes Projets",

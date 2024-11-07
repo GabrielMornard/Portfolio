@@ -1,8 +1,17 @@
 {
     "main":{
         "Moi":"About Me",
-        "Projet":"Projects",
-        "Contact":"Contacts"
+        "Skills":"Skills",
+        "Contact":"Contacts",
+        "Projects":"Projects",
+        "Title":"On the verge of becoming a full-stack developer, graduating soon!",
+        "Description":"Hi, I'm Gabriel Mornard. I'm passionate about web development and design. Welcome to my space!"
+    },
+    "Skills":{
+        "Title":"My Skills",
+        "BD":"Database",
+        "Mobile":"Mobile Development",
+        "Tools":"Tools and other"
     },
     "projet":{
         "myProject":"My Projects",

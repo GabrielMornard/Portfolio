@@ -46,25 +46,93 @@ footer{
     width: 100%;
     background-color: rgb(24, 24, 24);
 }
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700; /* Use 700 for bold if available */
-    font-size: 4.5em; /* Adjust font size as needed */
-    color: rgb(148, 28, 70); /* You can also adjust color */
-    text-align: center; /* Center the text if desired */
-    padding: 30vh 0;
-    opacity: 0; /* Start invisible */
-    animation: fadeInUp 1s ease-out forwards; /* Apply the animation */
-    animation-delay: 0.3s; 
+/* Presentation container */
+.presentation {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
+
+/* Header styles */
+h1 {
+    font-weight: 700;
+    font-size: 4.5em;
+    color: rgb(148, 28, 70);
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+    margin-bottom: 20px;
+}
+
+/* About text */
+.about-text {
+    font-size: 1.2em;
+    margin: 20px;
+    color: white;
+    max-width: 600px;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+/* Social media buttons container */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    opacity: 0;
+    animation: fadeInUp 2s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+/* Style for individual social media buttons */
+.social-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(148, 28, 70);
+    transition: background-color 0.3s ease;
+}
+
+.social-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.social-btn:hover {
+    background-color: #941c46; /* Hover color */
+}
+
+/* Role Title */
+.role-title {
+    font-size: 1.5em;
+    color: rgb(148, 28, 70);
+    margin-bottom: 15px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.7s;
+}
+
+
+/* Animation for fading and sliding up */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
-        transform: translateY(20px); /* Start slightly below */
+        transform: translateY(30px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0); /* End in original position */
+        transform: translateY(0);
     }
 }
 
