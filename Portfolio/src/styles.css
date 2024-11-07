@@ -16,6 +16,32 @@
     background-color: #888;  /* Hover effect */
 }
 
+#liens{
+    /* width: 30%;
+    margin-left: 35%;
+    margin-right: 35%; */
+    display: flex;
+}
+
+.infos{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 5px;
+    border: 2px solid rgb(148, 28, 70);
+    border-radius: 25px;
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    background:  rgb(24, 24, 24);
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -66,6 +92,7 @@ html, body {
 }
 
 .translatorBoxPC {
+    padding: 5px;
     position: fixed;
     width: auto;
     font-size: large;
@@ -247,4 +274,73 @@ html, body {
     .PC{
         display: none;
     }
+}
+.skills-container {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    align-items: flex-start; /* Aligns content to the top */
+    width: 100%;
+    padding: 20px; /* Adds padding to avoid content touching the edges */
+    box-sizing: border-box;
+    gap: 20px; /* Adds space between the left and right sections */
+}
+
+.skills-header {
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 20px; /* Adds space between the header and content */
+}
+
+.skills-header h2 {
+    font-size: 2em;
+    color: rgb(255, 255, 255); /* Matches the color theme */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.left, .right {
+    width: 45%; /* Makes them take up less space for better alignment */
+    background-color: rgb(148, 28, 70);
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column; /* Stacks the frontend sections vertically */
+    gap: 20px; /* Adds space between the sections inside the left and right columns */
+}
+
+.images {
+    display: flex;
+    gap: 20px; /* Increased gap for more space between items */
+    justify-content: flex-start; /* Aligns content to the left */
+    align-items: center; /* Centers the items vertically */
+    width: 100%;
+    height: auto; /* Let it grow based on content */
+    padding: 20px; /* Adds padding inside the container */
+    box-sizing: border-box;
+    flex-wrap: wrap; /* Allows the images to wrap to the next line when needed */
+}
+
+.imgParent {
+    width: 120px;
+    text-align: center; /* Centers the text inside each div */
+    transition: transform 0.3s ease; /* Ensures smooth transition for image */
+}
+
+.logo {
+    width: 50%; /* Makes the logo responsive */
+    max-width: 100px; /* Limits the maximum width of the logo */
+    max-height: 125px; /* Keeps the aspect ratio of the image */
+    margin-bottom: 10px; /* Adds space between the image and the text */
+    transition: transform 0.3s ease; /* Smoothly animates the transformation */
+}
+
+.logo:hover {
+    transform: scale(1.15); /* Scales the image to 125% of its original size */
+    max-width: 105px; /* Increases the max-width to allow the image to grow */
+}
+
+h4 {
+    color: white; /* Makes the text visible on a blue background */
+    font-size: 1.2rem; /* Adjusts the font size */
+    margin: 0;
 }
