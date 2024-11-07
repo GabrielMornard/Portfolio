@@ -37,9 +37,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
       }
     }),
     RouterModule.forRoot([
-      { path: "", redirectTo: "/web", pathMatch: "full" },
-      { path: "web", component: WebComponent },
-      { path: "android", component: AndroidComponent }
+      { path: "", redirectTo: "", pathMatch: "full" },
     ]),
     FontAwesomeModule
   ],

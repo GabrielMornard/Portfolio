@@ -1,5 +1,5 @@
 import { ViewportScroller } from '@angular/common';
-import { AfterViewInit, Component } from '@angular/core';
+import { AfterViewInit, Component, HostListener } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
@@ -7,27 +7,65 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent implements AfterViewInit {
   title = 'Portfolio';
+  isNavbarHidden = false;
+  isNavbarClicked = false;
+  lastScrollPosition = 0;
 
   language: string = 'fr';
   buttonSetting: boolean = false;
-  // Font Awesome icon
   faLinkedin = faLinkedin;
   faDownload = faDownload;
 
-  constructor(public translator: TranslateService, private viewportScroller: ViewportScroller) {
+  constructor(
+    public translator: TranslateService,
+    private viewportScroller: ViewportScroller
+  ) {
     this.translator.defaultLang = this.language;
     this.translator.use(this.language);
+  }
+
+  onNavbarClick() {
+    this.isNavbarClicked = !this.isNavbarClicked;
+    if (!this.isNavbarClicked) {
+      setTimeout(() => {
+        this.isNavbarHidden = false;
+      }, 500);
+    }
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    const currentScrollPosition = window.pageYOffset;
+
+    if (
+      currentScrollPosition > this.lastScrollPosition &&
+      currentScrollPosition > 50
+    ) {
+      this.isNavbarHidden = true;
+    } else {
+      this.isNavbarHidden = false;
+    }
+
+    this.lastScrollPosition = currentScrollPosition;
+  }
+
+  @HostListener('document:mousemove', ['$event'])
+  onMouseMove(event: MouseEvent) {
+    const mouseY = event.clientY;
+    if (mouseY < 50) {
+      this.isNavbarHidden = false;
+    }
   }
 
   changeLangue(): void {
     this.translator.use(this.language);
   }
 
-  ShowSettings(){
+  ShowSettings() {
     this.buttonSetting = !this.buttonSetting;
   }
 
@@ -35,11 +73,16 @@ export class AppComponent implements AfterViewInit {
     this.initBubbles();
   }
 
-  scrollTo(anchor: string, event: Event): void {
-    event.preventDefault(); // Prevent default anchor behavior
+  scrollTo(anchor: string, event?: Event): void {
+    if (event) {
+      event.preventDefault();
+    }
+
     const element = document.querySelector(anchor);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      window.scrollTo({ top: elementPosition, behavior: 'smooth' });
     }
   }
 
@@ -53,9 +96,12 @@ export class AppComponent implements AfterViewInit {
 
       for (let i = 0; i < maxBubbles; i++) {
         const bubble = document.createElement('span');
-        bubble.style.setProperty('--i', `${Math.floor(Math.random() * 25) + 10}`);
-        bubble.style.left = `${Math.random() * 100}%`; // Random horizontal position
-        bubble.style.top = `${Math.random() * 100}%`;  // Random vertical position
+        bubble.style.setProperty(
+          '--i',
+          `${Math.floor(Math.random() * 25) + 10}`
+        );
+        bubble.style.left = `${Math.random() * 100}%`;
+        bubble.style.top = `${Math.random() * 100}%`;
         bubblesContainer.appendChild(bubble);
       }
     }

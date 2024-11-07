@@ -5,49 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.component.css">
     <script src="https://kit.fontawesome.com/8cd83ee89f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="bubbles" id="bubbles"></div>
-        <div class="navigation">
+        <div class="navigation" [class.hide-navbar]="isNavbarHidden" (click)="onNavbarClick()">
           <a href="#moi" (click)="scrollTo('#moi', $event)" translate>main.Moi</a>
           <a href="#projets" (click)="scrollTo('#projets', $event)" translate>main.Projet</a>
           <a href="#contact" (click)="scrollTo('#contact', $event)" translate>main.Contact</a>
         </div>                      
-        <div class="PC">
+        <div>
           <select name="language" class="translatorBoxPC" [(ngModel)]="language" id="language" (change)="changeLangue()">
               <option value="fr">Français</option>
               <option value="en">English</option>
           </select>
         </div>
-        <div class="content" id="moi">
-            <div class="section">
-                <h1 class="nom">Gabriel Mornard </h1>
-                <p class="textAcceuil">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente repellendus maiores recusandae cupiditate, consequatur quam modi at. Accusamus illum ipsam nemo, totam eum, incidunt quae odio nam et sint fugiat.</p>
-                <a href="https://1drv.ms/b/c/51f793db27f236f7/ETheJQ9E4-tHgnfim1gF38UBZQQeDFvbQlwbeQZwIO6XMw?e=lkaJvG" target="_blank" class="infos cv" download="CV_GabrielMornard">
-                    <fa-icon [icon]="faDownload"></fa-icon> CV
-                </a>
+        <div class="content">
+            <div class="presentation" id="moi">
+                <h1>Gabriel Mornard</h1>
             </div>
-            <div class="section" id="projets">
-                <h1 class="projetTitle" translate>projet.myProject</h1>
-                <div class="component">
-
-                    <div class="projetsWeb" [routerLink]="['/web']" translate>projet.web</div>
-                    <div class="android" [routerLink]="['/android']" translate>projet.android</div>
-                    
+            <div class="projet" id="projets">
+                <div class="skills-header">
+                    <h2>My Skills</h2>
                 </div>
-                <div class="theProject">
-                    <router-outlet></router-outlet>
-                </div>
-            </div>
-            <footer>
-                <h5>Contact Me</h5>
-                <div id="liens">
-                      <a href="https://www.linkedin.com/in/gabriel-mornard-5708a4172/" class="infos" target="_blank">
-                        <fa-icon [icon]="faLinkedin"></fa-icon> LinkedIn
-                      </a>
+                <div class="skills-container">
+                    <div class="left">
+                        <div class="frontend">
+                            <h3>Frontend</h3>
+                            <div class="images">
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/typescript.png" alt="TypeScript">
+                                    <h4>TypeScript</h4>
+                                </div>
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/angular.png" alt="TypeScript">
+                                    <h4>Angular</h4>
+                                </div>
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/html.png" alt="TypeScript">
+                                    <h4>Html</h4>
+                                </div>
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/css-3.png" alt="TypeScript">
+                                    <h4>Css</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frontend">
+                            <h3>Database</h3>
+                            <div class="images">
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/icons8-sql-50.png" alt="TypeScript">
+                                    <h4>MSSQL</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frontend">
+                            <h3>IDE</h3>
+                            <div class="images">
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/icons8-vs-code-144.png" alt="TypeScript">
+                                    <h4>VS Code</h4>
+                                </div>
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/icons8-android-os-144.png" alt="TypeScript">
+                                    <h4>Android Studio</h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-            </footer>
+                    <div class="right">
+                        <div class="frontend">
+                            <h3>Backend</h3>
+                            <div class="images">
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/c-sharp.png" alt="TypeScript">
+                                    <h4>C#</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frontend">
+                            <h3>Mobile Development</h3>
+                            <div class="images">
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/icons8-java-144.png" alt="TypeScript">
+                                    <h4>Java</h4>
+                                </div>   <div class="imgParent">
+                                    <img class="logo" src="assets/images/icons8-flutter-144.png" alt="TypeScript">
+                                    <h4>Flutter</h4>
+                                </div>   <div class="imgParent">
+                                    <img class="logo" src="assets/images/icons8-dart-144.png" alt="TypeScript">
+                                    <h4>Dart</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frontend">
+                            <h3>Outils et autre</h3>
+                            <div class="images">
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/icons8-github-120.png" alt="TypeScript">
+                                    <h4>GitHub</h4>
+                                </div>
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/icons8-figma-144.png" alt="TypeScript">
+                                    <h4>Figma</h4>
+                                </div>
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/linux.png" alt="TypeScript">
+                                    <h4>Linux</h4>
+                                </div>
+                                <div class="imgParent">
+                                    <img class="logo" src="assets/images/icons8-azur-144.png" alt="TypeScript">
+                                    <h4>Azure</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact" id="contact"></div>
         </div>
     </div>
 </body>
