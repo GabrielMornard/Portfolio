@@ -10,11 +10,11 @@
     background-color: rgb(24, 24, 24);
 }
 .projet {
-    min-height: 100vh; /* Ensures the element is at least as tall as the viewport */
-    height: auto; /* Allows the element to grow based on content height */
-    width: 100%; /* Takes up the full width of the parent container */
-    background-color: rgb(148, 28, 70); /* Background color */
-    padding-top: 5%; /* Adds space from the top */
+    min-height: 100vh; 
+    height: auto; 
+    width: 100%; 
+    background-color: rgb(148, 28, 70);
+    padding-top: 5%; 
 }
 .myProject{
     height: 100vh;
@@ -26,7 +26,6 @@
     width: 100%;
     background-color: rgb(148, 28, 70);
 }
-/* Presentation container */
 .presentation {
     height: 100vh;
     width: 100%;
@@ -39,7 +38,6 @@
     text-align: center;
 }
 
-/* Header styles */
 h1 {
     font-weight: 700;
     font-size: 4.5em;
@@ -50,7 +48,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* About text */
 .about-text {
     font-size: 1.2em;
     margin: 20px;
@@ -62,7 +59,7 @@ h1 {
     animation-delay: 1s;
 }
 
-/* Social media buttons container */
+
 .social-buttons {
     display: flex;
     justify-content: center;
@@ -72,28 +69,35 @@ h1 {
     animation-delay: 1.5s;
 }
 
-/* Style for individual social media buttons */
 .social-btn {
-    width: 40px;
-    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    width: 50px; 
+    height: 50px; 
     display: flex;
+    color: black;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     background-color: rgb(148, 28, 70);
     transition: background-color 0.3s ease;
+    padding: 5px;
+    overflow: hidden;
+    white-space: nowrap; 
 }
 
+
 .social-btn img {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
 }
 
 .social-btn:hover {
-    background-color: #941c46; /* Hover color */
+    background-color: rgb(170, 50, 90); 
+    transform: scale(1.1);
 }
 
-/* Role Title */
+
 .role-title {
     font-size: 1.5em;
     color: rgb(148, 28, 70);
@@ -104,7 +108,6 @@ h1 {
 }
 
 
-/* Animation for fading and sliding up */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -117,63 +120,62 @@ h1 {
 }
 
 .myProject {
-    min-height: 100vh; /* Ensures the element is at least as tall as the viewport */
-    height: fit-content; /* Allows the height to adjust based on content */
-    width: 100%; /* Ensure the parent takes up the full width */
+    min-height: 100vh; 
+    height: fit-content;
+    width: 100%; 
     display: flex;
-    flex-direction: column; /* Stack child divs vertically */
-    align-items: center; /* Center child divs horizontally */
-    padding-bottom: 20px; /* Adds a little space at the bottom to prevent content from being cut off */
-    box-sizing: border-box; /* Ensures padding is included in the height calculation */
+    flex-direction: column;
+    align-items: center; 
+    padding-bottom: 20px;
+    box-sizing: border-box;
 }
-
 
 .container-project {
     display: flex;
-    flex-direction: column; /* Stack the two child divs vertically */
-    width: 100%; /* Make sure it takes up the full width of the parent */
-    align-items: center; /* Center child divs horizontally */
+    flex-direction: column;
+    width: 100%; 
+    align-items: center; 
 }
 
 .child {
-    width: 80%; /* Adjust width for the child div (80% of parent width) */
-    height: 40vh; /* Set the height to 40% of the viewport height */
-    margin-top: 2%; /* Add margin for spacing between the child divs */
+    width: 80%;
+    height: 40vh; 
+    margin-top: 2%; 
     display: flex;
-    flex-direction: row; /* Align text and image horizontally */
-    gap: 20px; /* Space between description and image */
-    align-items: center; /* Center the content vertically */
+    flex-direction: row; 
+    gap: 20px; 
+    align-items: center;
 }
 
 .left-content {
-    width: 50%; /* Text and button take 50% of the child div width */
-    text-align: left; /* Align text to the left */
+    width: 50%;
+    text-align: left; 
 }
 
 .image-container {
-    width: 40%; /* Image takes 50% of the child div */
-    height: auto; /* Image will adjust based on content */
+    width: 40%;
+    height: auto;
 }
 
 .image-container img {
-    width: 100%; /* Image takes full width of its container */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the space */
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
 }
 
 .project-link {
-    width: auto; /* Let the button fit its content */
+    width: auto;
     padding: 8px 16px;
-    background-color: rgb(148, 28, 70); /* Blue background */
+    background-color: rgb(148, 28, 70);
     color: white;
     text-decoration: none;
     border-radius: 4px;
     text-align: center;
     display: inline-block;
-    margin-top: 10px; /* Space between image and button */
+    margin-top: 10px; 
 }
 
 .project-link:hover {
-    background-color: rgb(85, 18, 41); /* Darker blue on hover */
+    background-color: rgb(85, 18, 41);
 }
 

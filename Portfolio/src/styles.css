@@ -289,23 +289,23 @@ html, body {
     width: 100%;
     text-align: left;
     padding-left: 5%;
-    margin-bottom: 20px; /* Adds space between the header and content */
+    margin-bottom: 20px;
 }
 
 .skills-header h2 {
     font-size: 2em;
-    color: rgb(255, 255, 255); /* Matches the color theme */
+    color: rgb(255, 255, 255); 
     font-weight: 700;
     margin-bottom: 10px;
 }
 
 .left, .right {
-    width: 45%; /* Makes them take up less space for better alignment */
+    width: 45%; 
     background-color: rgb(148, 28, 70);
     margin-top: 2%;
     display: flex;
-    flex-direction: column; /* Stacks the frontend sections vertically */
-    gap: 20px; /* Adds space between the sections inside the left and right columns */
+    flex-direction: column;
+    gap: 20px; 
 }
 
 .frontend{
@@ -316,37 +316,37 @@ html, body {
 
 .images {
     display: flex;
-    gap: 20px; /* Increased gap for more space between items */
-    justify-content: flex-start; /* Aligns content to the left */
-    align-items: center; /* Centers the items vertically */
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: center;
     width: 100%;
-    height: auto; /* Let it grow based on content */
-    padding: 20px; /* Adds padding inside the container */
+    height: auto; 
+    padding: 20px; 
     box-sizing: border-box;
-    flex-wrap: wrap; /* Allows the images to wrap to the next line when needed */
+    flex-wrap: wrap; 
 }
 
 .imgParent {
     width: 120px;
-    text-align: center; /* Centers the text inside each div */
-    transition: transform 0.3s ease; /* Ensures smooth transition for image */
+    text-align: center; 
+    transition: transform 0.3s ease; 
 }
 
 .logo {
-    width: 50%; /* Makes the logo responsive */
-    max-width: 100px; /* Limits the maximum width of the logo */
-    max-height: 125px; /* Keeps the aspect ratio of the image */
-    margin-bottom: 10px; /* Adds space between the image and the text */
-    transition: transform 0.3s ease; /* Smoothly animates the transformation */
+    width: 50%; 
+    max-width: 100px; 
+    max-height: 125px; 
+    margin-bottom: 10px; 
+    transition: transform 0.3s ease; 
 }
 
 .logo:hover {
-    transform: scale(1.15); /* Scales the image to 125% of its original size */
-    max-width: 105px; /* Increases the max-width to allow the image to grow */
+    transform: scale(1.15); 
+    max-width: 105px; 
 }
 
 h4 {
-    color: white; /* Makes the text visible on a blue background */
-    font-size: 1.2rem; /* Adjusts the font size */
+    color: white; 
+    font-size: 1.2rem; 
     margin: 0;
 }
