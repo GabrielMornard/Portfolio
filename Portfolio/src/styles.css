@@ -308,6 +308,12 @@ html, body {
     gap: 20px; /* Adds space between the sections inside the left and right columns */
 }
 
+.frontend{
+    background-color: #0c192c;
+    border-radius: 25px;
+    padding: 5%;
+}
+
 .images {
     display: flex;
     gap: 20px; /* Increased gap for more space between items */

@@ -43,7 +43,7 @@
 h1 {
     font-weight: 700;
     font-size: 4.5em;
-    color: rgb(148, 28, 70);
+    color: #941c46;
     opacity: 0;
     animation: fadeInUp 1s ease-out forwards;
     animation-delay: 0.3s;
