@@ -1,0 +1,119 @@
+/* =========================
+   SKILLS SECTION
+========================= */
+
+.skills-section {
+    min-height: 100vh;
+    width: 100%;
+    padding-top: 5%;
+}
+
+.projet{
+    background-color: rgb(148, 28, 70);
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.skills-header {
+    width: 100%;
+    text-align: left;
+
+    padding-left: 5%;
+
+    margin-bottom: 20px;
+}
+
+.skills-header h2 {
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    width: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    gap: 20px;
+}
+
+.left,
+.right {
+    width: 45%;
+
+    background-color: rgb(148, 28, 70);
+
+    margin-top: 2%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+/* =========================
+   CATEGORY BOX
+========================= */
+
+.frontend {
+    background-color: #0c192c;
+
+    border-radius: 25px;
+
+    padding: 5%;
+}
+
+/* =========================
+   SKILL ICONS
+========================= */
+
+.images {
+    display: flex;
+    gap: 20px;
+
+    justify-content: flex-start;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 20px;
+
+    box-sizing: border-box;
+
+    flex-wrap: wrap;
+}
+
+.imgParent {
+    width: 120px;
+
+    text-align: center;
+
+    transition: transform 0.3s ease;
+}
+
+.logo {
+    width: 50%;
+    max-width: 100px;
+    max-height: 125px;
+
+    margin-bottom: 10px;
+
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.15);
+}
