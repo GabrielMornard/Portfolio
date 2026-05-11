@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-android',
-  templateUrl: './android.component.html',
-  styleUrls: ['./android.component.css']
+    selector: 'app-android',
+    templateUrl: './android.component.html',
+    styleUrls: ['./android.component.css'],
+    standalone: false
 })
 export class AndroidComponent {
 
