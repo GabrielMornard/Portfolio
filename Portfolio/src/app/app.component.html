@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="bubbles" id="bubbles"></div>
+      <div class="bubbles">
+        @for (bubble of bubbles; track $index) {
+          <span
+            [style.--i]="bubble.speed"
+            [style.left]="bubble.left"
+            [style.top]="bubble.top"
+          >
+          </span>
+        }
+      </div>
       <div
         class="navigation"
         [class.hide-navbar]="isNavbarHidden"
