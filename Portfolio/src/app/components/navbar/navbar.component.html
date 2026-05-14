@@ -1,0 +1,17 @@
+<nav class="navigation" [class.hide-navbar]="isNavbarHidden">
+  <a href="#moi" (click)="scrollTo('#moi', $event)" translate>main.Moi</a>
+  <a href="#skills" (click)="scrollTo('#skills', $event)" translate>main.Skills</a>
+  <a href="#myProject" (click)="scrollTo('#myProject', $event)" translate>main.Projects</a>
+  <a href="#contact" (click)="scrollTo('#contact', $event)" translate>main.Contact</a>
+</nav>
+
+<select
+  name="language"
+  class="translatorBoxPC"
+  [(ngModel)]="language"
+  id="language"
+  (change)="changeLangue()"
+>
+  <option value="fr">Français</option>
+  <option value="en">English</option>
+</select>

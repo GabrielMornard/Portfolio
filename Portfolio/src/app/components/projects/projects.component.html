@@ -1,0 +1,23 @@
+<div class="myProject" id="myProject">
+  <div class="skills-header">
+    <h2 translate>projet.myProject</h2>
+  </div>
+  <div class="container-project">
+    @for (project of projects; track project.titleKey) {
+      <div class="child" [class.reverse]="project.imageLeft">
+        <div class="left-content">
+          <h3 translate>{{ project.titleKey }}</h3>
+          <div class="description">
+            <p translate>{{ project.descriptionKey }}</p>
+          </div>
+          <a [href]="project.link" target="_blank" class="project-link" translate>
+            projet.seeProject
+          </a>
+        </div>
+        <div class="image-container">
+          <img [src]="project.image" [alt]="project.alt" loading="lazy" />
+        </div>
+      </div>
+    }
+  </div>
+</div>

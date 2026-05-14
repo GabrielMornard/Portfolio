@@ -1,27 +1,35 @@
 {
-    "main":{
-        "Moi":"À Propos De Moi",
-        "Skills":"Habiletés",
-        "Contact":"Contacts",
-        "Projects":"Projets",
-        "Title":"Développeur full-stack",
-        "Description":"Bonjour, je suis Gabriel Mornard. Je suis passionné par le développement web, mobile et le design. Bienvenue dans mon espace !"
+  "main": {
+    "Moi": "À Propos De Moi",
+    "Skills": "Habiletés",
+    "Contact": "Contact",
+    "Projects": "Projets",
+    "Title": "Sur le point de devenir développeur full-stack, diplômé bientôt !",
+    "Description": "Bonjour, je suis Gabriel Mornard. Je suis passionné par le développement web et le design. Bienvenue dans mon espace !"
+  },
+  "Skills": {
+    "Title": "Mes Habiletés",
+    "Frontend": "Frontend",
+    "Backend": "Backend",
+    "BD": "Base de données",
+    "Mobile": "Développement Mobile",
+    "Tools": "Outils et autre",
+    "IDE": "IDE"
+  },
+  "projet": {
+    "myProject": "Mes Projets",
+    "seeProject": "Voir le projet",
+    "project1": {
+      "title": "Application de gestion de tâches",
+      "description": "Une application web pour gérer des tâches et des projets, construite avec Angular et .NET."
     },
-    "Skills":{
-        "Title":"Mes Habiletés",
-        "BD":"Base de données",
-        "Mobile":"Développement Mobile",
-        "Tools":"Outils et autre"
-    },
-    "projet":{
-        "myProject":"Mes Projets",
-        "web":"Web",
-        "android":"Android"
-    },
-    "contact":{
-        "contact":"Mes Contacts"
-    },
-    "web":{
-        "competance":"Compétances utiliser pour ces projets"
+    "project2": {
+      "title": "Application Mobile",
+      "description": "Une application mobile Android construite avec Java et Firebase."
     }
+  },
+  "contact": {
+    "contact": "Me Contacter",
+    "description": "Je suis toujours ouvert à de nouvelles opportunités et collaborations. N'hésitez pas à me contacter !"
+  }
 }

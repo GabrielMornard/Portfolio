@@ -1,27 +1,35 @@
 {
-    "main":{
-        "Moi":"About Me",
-        "Skills":"Skills",
-        "Contact":"Contacts",
-        "Projects":"Projects",
-        "Title":"Full-stack developer",
-        "Description":"Hi, I'm Gabriel Mornard. I'm passionate about web, mobile development and design. Welcome to my space!"
+  "main": {
+    "Moi": "About Me",
+    "Skills": "Skills",
+    "Contact": "Contact",
+    "Projects": "Projects",
+    "Title": "On the verge of becoming a full-stack developer, graduating soon!",
+    "Description": "Hi, I'm Gabriel Mornard. I'm passionate about web development and design. Welcome to my space!"
+  },
+  "Skills": {
+    "Title": "My Skills",
+    "Frontend": "Frontend",
+    "Backend": "Backend",
+    "BD": "Database",
+    "Mobile": "Mobile Development",
+    "Tools": "Tools & Other",
+    "IDE": "IDE"
+  },
+  "projet": {
+    "myProject": "My Projects",
+    "seeProject": "See Project",
+    "project1": {
+      "title": "Task Manager App",
+      "description": "A web application to manage tasks and projects, built with Angular and .NET."
     },
-    "Skills":{
-        "Title":"My Skills",
-        "BD":"Database",
-        "Mobile":"Mobile Development",
-        "Tools":"Tools and other"
-    },
-    "projet":{
-        "myProject":"My Projects",
-        "web":"Web",
-        "android":"Android"
-    },
-    "contact":{
-        "contact":"My Contacts"
-    },
-    "web":{
-        "competance":"Skills used for these projects"
+    "project2": {
+      "title": "Mobile App",
+      "description": "An Android mobile application built with Java and Firebase."
     }
+  },
+  "contact": {
+    "contact": "Get In Touch",
+    "description": "I'm always open to new opportunities and collaborations. Feel free to reach out!"
+  }
 }

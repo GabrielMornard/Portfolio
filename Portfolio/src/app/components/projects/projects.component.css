@@ -1,0 +1,92 @@
+.myProject {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.skills-header {
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 20px;
+    padding-top: 5%;
+}
+
+.skills-header h2 {
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+}
+
+.container-project {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.child {
+    width: 80%;
+    min-height: 40vh;
+    margin-top: 2%;
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    align-items: center;
+}
+
+.child.reverse {
+    flex-direction: row-reverse;
+}
+
+.left-content {
+    width: 50%;
+    text-align: left;
+}
+
+.left-content h3 {
+    color: #941c46;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.description {
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.image-container {
+    width: 40%;
+    height: auto;
+}
+
+.image-container img {
+    width: 45%;
+    height: auto;
+    object-fit: cover;
+}
+
+.project-link {
+    padding: 8px 16px;
+    background-color: rgb(148, 28, 70);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: rgb(85, 18, 41);
+}

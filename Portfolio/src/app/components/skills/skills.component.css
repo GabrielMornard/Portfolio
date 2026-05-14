@@ -1,27 +1,14 @@
-/* =========================
-   SKILLS SECTION
-========================= */
-
-.skills-section {
+.projet {
+    background-color: rgb(148, 28, 70);
     min-height: 100vh;
     width: 100%;
     padding-top: 5%;
 }
 
-.projet{
-    background-color: rgb(148, 28, 70);
-}
-
-/* =========================
-   HEADER
-========================= */
-
 .skills-header {
     width: 100%;
     text-align: left;
-
     padding-left: 5%;
-
     margin-bottom: 20px;
 }
 
@@ -31,10 +18,6 @@
     font-weight: 700;
     margin-bottom: 10px;
 }
-
-/* =========================
-   MAIN LAYOUT
-========================= */
 
 .skills-container {
     display: flex;
@@ -53,9 +36,7 @@
 .left,
 .right {
     width: 45%;
-
     background-color: rgb(148, 28, 70);
-
     margin-top: 2%;
 
     display: flex;
@@ -64,21 +45,16 @@
     gap: 20px;
 }
 
-/* =========================
-   CATEGORY BOX
-========================= */
-
-.frontend {
+.skill-group {
     background-color: #0c192c;
-
     border-radius: 25px;
-
     padding: 5%;
 }
 
-/* =========================
-   SKILL ICONS
-========================= */
+.skill-group h3 {
+    color: white;
+    margin-bottom: 10px;
+}
 
 .images {
     display: flex;
@@ -98,9 +74,7 @@
 
 .imgParent {
     width: 120px;
-
     text-align: center;
-
     transition: transform 0.3s ease;
 }
 

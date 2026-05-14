@@ -1,126 +1,17 @@
-<!doctype html>
-<html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="app.component.css" />
-    <script
-      src="https://kit.fontawesome.com/8cd83ee89f.js"
-      crossorigin="anonymous"
-    ></script>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <div class="bubbles">
-        @for (bubble of bubbles; track $index) {
-          <span
-            [style.--i]="bubble.speed"
-            [style.left]="bubble.left"
-            [style.top]="bubble.top"
-          >
-          </span>
-        }
-      </div>
-      <div
-        class="navigation"
-        [class.hide-navbar]="isNavbarHidden"
-        (click)="onNavbarClick()"
-      >
-        <a href="#moi" (click)="scrollTo('#moi', $event)" translate>main.Moi</a>
-        <a href="#skills" (click)="scrollTo('#skills', $event)" translate
-          >main.Skills</a
-        >
-        <a href="#myProject" (click)="scrollTo('#myProject', $event)" translate
-          >main.Projects</a
-        >
-        <a href="#contact" (click)="scrollTo('#contact', $event)" translate
-          >main.Contact</a
-        >
-      </div>
-      <div>
-        <select
-          name="language"
-          class="translatorBoxPC"
-          [(ngModel)]="language"
-          id="language"
-          (change)="changeLangue()"
-        >
-          <option value="fr">Français</option>
-          <option value="en">English</option>
-        </select>
-      </div>
-      <div class="content">
-        <div class="presentation" id="moi">
-          <h1>Gabriel Mornard</h1>
-          <p class="role-title" translate>main.Title</p>
-          <p class="about-text" translate>main.Description</p>
-          <div class="social-buttons">
-            <a
-              href="https://www.linkedin.com/in/gabrielmornard"
-              target="_blank"
-              class="social-btn"
-            >
-              <img src="assets/images/icons8-linkedin-150.png" alt="LinkedIn" />
-            </a>
-            <a
-              href="https://github.com/GabrielMornard"
-              target="_blank"
-              class="social-btn"
-            >
-              <img src="assets/images/icons8-github-120.png" alt="GitHub" />
-            </a>
-            <a
-              href="assets/cv/GabrielMornard_CV.pdf"
-              download="CVGabrielMornard"
-              class="social-btn"
-            >
-              <img src="assets/images/downloads.png" alt="CV" />
-            </a>
-          </div>
-        </div>
+<div class="container">
+  <div class="bubbles">
+    @for (bubble of bubbles; track $index) {
+      <span
+        [style.--i]="bubble.speed"
+        [style.left]="bubble.left"
+        [style.top]="bubble.top"
+      ></span>
+    }
+  </div>
 
-        <app-skills></app-skills>
-
-        <div class="myProject" id="myProject">
-          <div class="skills-header">
-            <h2 translate>projet.myProject</h2>
-          </div>
-          <div class="container-project">
-            <div class="child">
-              <div class="left-content">
-                <div class="description">
-                  <p>This is a brief description of one of my projects.</p>
-                </div>
-                <a href="link-to-project-page.html" class="project-link"
-                  >See Project</a
-                >
-              </div>
-              <div class="image-container">
-                <img src="assets/images/taskApp.png" alt="Project Image" />
-              </div>
-            </div>
-            <div class="child">
-              <div class="image-container">
-                <img src="/assets/images/phone1.png" alt="Project Image" />
-              </div>
-              <div class="left-content">
-                <div class="description">
-                  <p>This is a brief description of another project.</p>
-                </div>
-                <a href="link-to-project-page.html" class="project-link"
-                  >See Project</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="contact" id="contact"></div>
-      </div>
-    </div>
-  </body>
-</html>
+  <app-navbar></app-navbar>
+  <app-hero></app-hero>
+  <app-skills></app-skills>
+  <app-projects></app-projects>
+  <app-contact></app-contact>
+</div>

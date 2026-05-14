@@ -1,0 +1,111 @@
+.presentation {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(24, 24, 24);
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.presentation h1 {
+    font-weight: 700;
+    font-size: 4.5em;
+    color: #941c46;
+
+    opacity: 0;
+
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s;
+
+    margin-bottom: 20px;
+}
+
+.role-title {
+    font-size: 1.5em;
+    color: rgb(148, 28, 70);
+
+    margin-bottom: 15px;
+
+    opacity: 0;
+
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.7s;
+}
+
+.about-text {
+    font-size: 1.2em;
+    margin: 20px;
+    color: white;
+    max-width: 600px;
+    line-height: 1.5;
+
+    opacity: 0;
+
+    animation: fadeInUp 1.5s ease-out forwards;
+    animation-delay: 1s;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    opacity: 0;
+
+    animation: fadeInUp 2s ease-out forwards;
+    animation-delay: 1.5s;
+}
+
+.social-btn {
+    min-width: 40px;
+    min-height: 40px;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: rgb(148, 28, 70);
+
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+
+    padding: 5px;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.social-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.social-btn:hover {
+    background-color: rgb(170, 50, 90);
+    transform: scale(1.1);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
