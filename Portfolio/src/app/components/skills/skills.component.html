@@ -1,37 +1,20 @@
-<div class="projet" id="skills">
+<div class="skills-section" id="skills">
   <div class="skills-header">
+    <span class="section-eyebrow" translate>Skills.Eyebrow</span>
     <h2 translate>Skills.Title</h2>
   </div>
-  <div class="skills-container">
-    <div class="left">
-      @for (group of leftGroups; track group.titleKey) {
-        <div class="skill-group">
-          <h3 translate>{{ group.titleKey }}</h3>
-          <div class="images">
-            @for (skill of group.skills; track skill.name) {
-              <div class="imgParent">
-                <img class="logo" [src]="skill.image" [alt]="skill.alt" loading="lazy" />
-                <h4>{{ skill.name }}</h4>
-              </div>
-            }
+
+  @for (group of allGroups; track group.titleKey) {
+    <div class="skill-category">
+      <div class="category-label" translate>{{ group.titleKey }}</div>
+      <div class="skill-row">
+        @for (skill of group.skills; track skill.name) {
+          <div class="skill-card">
+            <img [src]="skill.image" [alt]="skill.alt" loading="lazy" />
+            <span>{{ skill.name }}</span>
           </div>
-        </div>
-      }
+        }
+      </div>
     </div>
-    <div class="right">
-      @for (group of rightGroups; track group.titleKey) {
-        <div class="skill-group">
-          <h3 translate>{{ group.titleKey }}</h3>
-          <div class="images">
-            @for (skill of group.skills; track skill.name) {
-              <div class="imgParent">
-                <img class="logo" [src]="skill.image" [alt]="skill.alt" loading="lazy" />
-                <h4>{{ skill.name }}</h4>
-              </div>
-            }
-          </div>
-        </div>
-      }
-    </div>
-  </div>
+  }
 </div>

@@ -1,63 +1,97 @@
 .navigation {
-    background: rgb(24, 24, 24);
-    color: white;
-    margin-top: 10px;
-    border: 2px solid #941c46;
-    border-radius: 25px;
-    z-index: 3;
-
-    width: auto;
-    height: 50px;
-    padding: 0 5%;
-
     position: fixed;
-    top: 0;
+    top: 12px;
     left: 50%;
-
     transform: translateX(-50%);
+    z-index: 100;
 
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 4px;
 
-    transition: top 0.3s ease, top 0.5s ease;
+    height: 44px;
+    padding: 0 8px;
+
+    background: rgba(22, 27, 34, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--border-accent);
+    border-radius: var(--radius-pill);
+
+    transition: top 0.35s cubic-bezier(0.4, 0, 0.2, 1),
+                opacity 0.35s ease;
 }
 
 .navigation.hide-navbar {
     top: -60px;
-    transition-delay: 0.5s;
+    opacity: 0;
 }
 
 .navigation a {
-    color: white;
+    color: var(--text-secondary);
     text-decoration: none;
-    padding: 0 15px;
-    line-height: 50px;
-
-    text-overflow: ellipsis;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 16px;
+    border-radius: var(--radius-pill);
+    line-height: 1;
     white-space: nowrap;
-    overflow: hidden;
+    transition: color var(--transition), background var(--transition);
 }
 
 .navigation a:hover {
-    color: rgb(148, 28, 70);
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.06);
 }
 
+.navigation a.active {
+    color: var(--accent);
+    background: var(--accent-dim);
+}
+
+/* Language selector */
 .translatorBoxPC {
     position: fixed;
-    width: auto;
-    font-size: large;
-    right: 0;
-    z-index: 5;
-    top: 0;
+    top: 12px;
+    right: 16px;
+    z-index: 101;
 
-    margin: 10px;
+    background: rgba(22, 27, 34, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    color: var(--text-secondary);
+    font-size: 12px;
+    font-weight: 500;
 
-    background: rgb(24, 24, 24);
-    color: white;
+    border: 1px solid var(--border-accent);
+    border-radius: var(--radius-pill);
+    padding: 6px 10px;
+    cursor: pointer;
 
-    border: 2px solid #941c46;
-    border-radius: 25px;
+    transition: color var(--transition), border-color var(--transition);
+    appearance: none;
+    -webkit-appearance: none;
+}
 
-    padding: 5px;
+.translatorBoxPC:hover {
+    color: var(--text-primary);
+    border-color: var(--accent);
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        gap: 0;
+        padding: 0 4px;
+    }
+
+    .navigation a {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .translatorBoxPC {
+        top: auto;
+        bottom: 16px;
+        right: 16px;
+    }
 }

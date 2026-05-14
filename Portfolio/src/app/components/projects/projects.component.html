@@ -1,23 +1,27 @@
-<div class="myProject" id="myProject">
-  <div class="skills-header">
+<div class="projects-section" id="myProject">
+  <div class="projects-header">
+    <span class="section-eyebrow" translate>projet.Eyebrow</span>
     <h2 translate>projet.myProject</h2>
   </div>
-  <div class="container-project">
-    @for (project of projects; track project.titleKey) {
-      <div class="child" [class.reverse]="project.imageLeft">
-        <div class="left-content">
-          <h3 translate>{{ project.titleKey }}</h3>
-          <div class="description">
-            <p translate>{{ project.descriptionKey }}</p>
-          </div>
-          <a [href]="project.link" target="_blank" class="project-link" translate>
-            projet.seeProject
-          </a>
+
+  @for (project of projects; track project.titleKey; let i = $index) {
+    <div class="project-card" [class.reverse]="project.imageLeft">
+      <div class="project-info">
+        <span class="project-number">{{ (i + 1).toString().padStart(2, '0') }}</span>
+        <h3 translate>{{ project.titleKey }}</h3>
+        <p translate>{{ project.descriptionKey }}</p>
+        <div class="project-tags">
+          @for (tag of project.tags; track tag) {
+            <span class="tag">{{ tag }}</span>
+          }
         </div>
-        <div class="image-container">
-          <img [src]="project.image" [alt]="project.alt" loading="lazy" />
-        </div>
+        <a [href]="project.link" target="_blank" class="project-link" translate>
+          projet.seeProject
+        </a>
       </div>
-    }
-  </div>
+      <div class="project-image">
+        <img [src]="project.image" [alt]="project.alt" loading="lazy" />
+      </div>
+    </div>
+  }
 </div>

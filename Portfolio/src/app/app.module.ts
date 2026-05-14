@@ -10,9 +10,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeroComponent } from './components/hero/hero.component';
+import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { SkillsComponent } from './components/skills/skills.component';
 
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
   return new TranslateHttpLoader(http);
@@ -21,11 +21,11 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
 @NgModule({
   declarations: [
     AppComponent,
-    ProjectsComponent,
-    ContactComponent,
     NavbarComponent,
     HeroComponent,
     SkillsComponent,
+    ProjectsComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

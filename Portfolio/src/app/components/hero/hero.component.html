@@ -1,16 +1,29 @@
 <div class="presentation" id="moi">
-  <h1>Gabriel Mornard</h1>
+  <p class="eyebrow" translate>main.Eyebrow</p>
+  <h1>Gabriel <span>Mornard</span></h1>
   <p class="role-title" translate>main.Title</p>
   <p class="about-text" translate>main.Description</p>
+
+  <div class="hero-buttons">
+    <a href="#myProject" (click)="scrollTo('#myProject', $event)" class="btn-primary">
+      View My Work
+    </a>
+    <a href="assets/cv/GabrielMornard_CV.pdf" download="CVGabrielMornard" class="btn-secondary">
+      Download CV
+    </a>
+  </div>
+
   <div class="social-buttons">
-    <a href="https://www.linkedin.com/in/gabrielmornard" target="_blank" class="social-btn">
-      <img src="assets/images/icons8-linkedin-150.png" alt="LinkedIn" loading="lazy" />
+    <a href="https://www.linkedin.com/in/gabrielmornard" target="_blank" class="social-btn" aria-label="LinkedIn">
+      <img src="assets/images/icons8-linkedin-150.png" alt="LinkedIn" />
     </a>
-    <a href="https://github.com/GabrielMornard" target="_blank" class="social-btn">
-      <img src="assets/images/icons8-github-120.png" alt="GitHub" loading="lazy" />
+    <a href="https://github.com/GabrielMornard" target="_blank" class="social-btn" aria-label="GitHub">
+      <img src="assets/images/icons8-github-120.png" alt="GitHub" />
     </a>
-    <a href="assets/cv/GabrielMornard_CV.pdf" download="CVGabrielMornard" class="social-btn">
-      <img src="assets/images/downloads.png" alt="Download CV" loading="lazy" />
-    </a>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <div class="scroll-dot"></div>
   </div>
 </div>

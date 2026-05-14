@@ -1,35 +1,39 @@
 {
   "main": {
-    "Moi": "About Me",
+    "Eyebrow": "Full-Stack Developer",
+    "Moi": "About",
     "Skills": "Skills",
     "Contact": "Contact",
     "Projects": "Projects",
-    "Title": "On the verge of becoming a full-stack developer, graduating soon!",
-    "Description": "Hi, I'm Gabriel Mornard. I'm passionate about web development and design. Welcome to my space!"
+    "Title": "On the verge of becoming a full-stack developer — graduating soon.",
+    "Description": "Hi, I'm Gabriel Mornard. Passionate about building clean, functional web and mobile experiences."
   },
   "Skills": {
-    "Title": "My Skills",
+    "Eyebrow": "What I work with",
+    "Title": "Skills",
     "Frontend": "Frontend",
     "Backend": "Backend",
     "BD": "Database",
-    "Mobile": "Mobile Development",
+    "Mobile": "Mobile",
     "Tools": "Tools & Other",
-    "IDE": "IDE"
+    "IDE": "IDE & Editors"
   },
   "projet": {
-    "myProject": "My Projects",
-    "seeProject": "See Project",
+    "Eyebrow": "What I've built",
+    "myProject": "Projects",
+    "seeProject": "View Project",
     "project1": {
       "title": "Task Manager App",
-      "description": "A web application to manage tasks and projects, built with Angular and .NET."
+      "description": "A web application to create, assign and track tasks across projects. Built with Angular on the frontend and a .NET REST API backed by MSSQL."
     },
     "project2": {
       "title": "Mobile App",
-      "description": "An Android mobile application built with Java and Firebase."
+      "description": "An Android application built with Java, featuring real-time data sync through Firebase and a clean material design interface."
     }
   },
   "contact": {
+    "Eyebrow": "Let's connect",
     "contact": "Get In Touch",
-    "description": "I'm always open to new opportunities and collaborations. Feel free to reach out!"
+    "description": "I'm actively looking for opportunities. Whether you have a question, a project idea, or just want to say hi — my inbox is open."
   }
 }

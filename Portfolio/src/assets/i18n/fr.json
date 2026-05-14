@@ -1,35 +1,39 @@
 {
   "main": {
-    "Moi": "À Propos De Moi",
+    "Eyebrow": "Développeur Full-Stack",
+    "Moi": "À propos",
     "Skills": "Habiletés",
     "Contact": "Contact",
     "Projects": "Projets",
-    "Title": "Sur le point de devenir développeur full-stack, diplômé bientôt !",
-    "Description": "Bonjour, je suis Gabriel Mornard. Je suis passionné par le développement web et le design. Bienvenue dans mon espace !"
+    "Title": "Sur le point de devenir développeur full-stack — diplômé bientôt.",
+    "Description": "Bonjour, je suis Gabriel Mornard. Passionné par la création d'expériences web et mobiles propres et fonctionnelles."
   },
   "Skills": {
-    "Title": "Mes Habiletés",
+    "Eyebrow": "Avec quoi je travaille",
+    "Title": "Habiletés",
     "Frontend": "Frontend",
     "Backend": "Backend",
     "BD": "Base de données",
-    "Mobile": "Développement Mobile",
+    "Mobile": "Mobile",
     "Tools": "Outils et autre",
-    "IDE": "IDE"
+    "IDE": "IDE et éditeurs"
   },
   "projet": {
-    "myProject": "Mes Projets",
+    "Eyebrow": "Ce que j'ai construit",
+    "myProject": "Projets",
     "seeProject": "Voir le projet",
     "project1": {
       "title": "Application de gestion de tâches",
-      "description": "Une application web pour gérer des tâches et des projets, construite avec Angular et .NET."
+      "description": "Une application web pour créer, assigner et suivre des tâches. Construite avec Angular côté frontend et une API REST .NET avec MSSQL."
     },
     "project2": {
       "title": "Application Mobile",
-      "description": "Une application mobile Android construite avec Java et Firebase."
+      "description": "Une application Android en Java avec synchronisation temps réel via Firebase et une interface Material Design soignée."
     }
   },
   "contact": {
+    "Eyebrow": "Connectons-nous",
     "contact": "Me Contacter",
-    "description": "Je suis toujours ouvert à de nouvelles opportunités et collaborations. N'hésitez pas à me contacter !"
+    "description": "Je recherche activement des opportunités. Que vous ayez une question, une idée de projet ou simplement envie de dire bonjour — mon inbox est ouvert."
   }
 }

@@ -18,14 +18,24 @@ export interface SkillGroup {
   standalone: false,
 })
 export class SkillsComponent {
-  leftGroups: SkillGroup[] = [
+  allGroups: SkillGroup[] = [
     {
       titleKey: 'Skills.Frontend',
       skills: [
-        { name: 'TypeScript', image: 'assets/images/typescript.png', alt: 'TypeScript' },
-        { name: 'Angular',    image: 'assets/images/angular.png',    alt: 'Angular' },
-        { name: 'HTML',       image: 'assets/images/html.png',       alt: 'HTML' },
-        { name: 'CSS',        image: 'assets/images/css-3.png',      alt: 'CSS' },
+        { name: 'TypeScript', image: 'assets/images/typescript.png',    alt: 'TypeScript' },
+        { name: 'Angular',    image: 'assets/images/angular.png',       alt: 'Angular' },
+        { name: 'HTML',       image: 'assets/images/html.png',          alt: 'HTML' },
+        { name: 'CSS',        image: 'assets/images/css-3.png',         alt: 'CSS' },
+        { name: 'Bootstrap',  image: 'assets/images/icons8-bootstrap-144.png', alt: 'Bootstrap' },
+      ],
+    },
+    {
+      titleKey: 'Skills.Backend',
+      skills: [
+        { name: 'C#',          image: 'assets/images/c-sharp.png',                alt: 'C#' },
+        { name: 'Dotnet',      image: 'assets/images/NET core.png',               alt: 'Dotnet' },
+        { name: 'Spring Boot', image: 'assets/images/icons8-spring-boot-144.png', alt: 'Spring Boot' },
+        { name: 'Firebase',    image: 'assets/images/Firebase.png',               alt: 'Firebase' },
       ],
     },
     {
@@ -33,28 +43,6 @@ export class SkillsComponent {
       skills: [
         { name: 'MSSQL',  image: 'assets/images/icons8-sql-50.png', alt: 'MSSQL' },
         { name: 'SQLite', image: 'assets/images/SQLite.png',         alt: 'SQLite' },
-      ],
-    },
-    {
-      titleKey: 'Skills.IDE',
-      skills: [
-        { name: 'VS Code',        image: 'assets/images/icons8-vs-code-144.png',      alt: 'VS Code' },
-        { name: 'Visual Studio',  image: 'assets/images/icons8-visual-studio-144.png', alt: 'Visual Studio' },
-        { name: 'Android Studio', image: 'assets/images/icons8-android-os-144.png',   alt: 'Android Studio' },
-        { name: 'IntelliJ',       image: 'assets/images/intellij-idea.svg',            alt: 'IntelliJ' },
-        { name: 'Docker',         image: 'assets/images/docker.png',                   alt: 'Docker' },
-      ],
-    },
-  ];
-
-  rightGroups: SkillGroup[] = [
-    {
-      titleKey: 'Skills.Backend',
-      skills: [
-        { name: 'C#',          image: 'assets/images/c-sharp.png',               alt: 'C#' },
-        { name: 'Dotnet',      image: 'assets/images/NET core.png',              alt: 'Dotnet' },
-        { name: 'Spring Boot', image: 'assets/images/icons8-spring-boot-144.png', alt: 'Spring Boot' },
-        { name: 'Firebase',    image: 'assets/images/Firebase.png',              alt: 'Firebase' },
       ],
     },
     {
@@ -66,14 +54,23 @@ export class SkillsComponent {
       ],
     },
     {
+      titleKey: 'Skills.IDE',
+      skills: [
+        { name: 'VS Code',        image: 'assets/images/icons8-vs-code-144.png',       alt: 'VS Code' },
+        { name: 'Visual Studio',  image: 'assets/images/icons8-visual-studio-144.png', alt: 'Visual Studio' },
+        { name: 'Android Studio', image: 'assets/images/icons8-android-os-144.png',    alt: 'Android Studio' },
+        { name: 'IntelliJ',       image: 'assets/images/intellij-idea.svg',             alt: 'IntelliJ' },
+        { name: 'Docker',         image: 'assets/images/docker.png',                    alt: 'Docker' },
+      ],
+    },
+    {
       titleKey: 'Skills.Tools',
       skills: [
-        { name: 'GitHub',     image: 'assets/images/icons8-github-120.png',    alt: 'GitHub' },
-        { name: 'Figma',      image: 'assets/images/icons8-figma-144.png',     alt: 'Figma' },
-        { name: 'Linux',      image: 'assets/images/linux.png',                alt: 'Linux' },
-        { name: 'Azure',      image: 'assets/images/icons8-azur-144.png',      alt: 'Azure' },
-        { name: 'Postman',    image: 'assets/images/postman.svg',              alt: 'Postman' },
-        { name: 'Bootstrap',  image: 'assets/images/icons8-bootstrap-144.png', alt: 'Bootstrap' },
+        { name: 'GitHub',  image: 'assets/images/icons8-github-120.png',    alt: 'GitHub' },
+        { name: 'Figma',   image: 'assets/images/icons8-figma-144.png',     alt: 'Figma' },
+        { name: 'Linux',   image: 'assets/images/linux.png',                alt: 'Linux' },
+        { name: 'Azure',   image: 'assets/images/icons8-azur-144.png',      alt: 'Azure' },
+        { name: 'Postman', image: 'assets/images/postman.svg',              alt: 'Postman' },
       ],
     },
   ];
